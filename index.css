@@ -55,3 +55,38 @@ input#cardHolder {
 	border-radius: 5px;
 	border-color: transparent;
 }
+
+input#month {
+	width: 30%;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	border-color: transparent;
+}
+
+input#year {
+	width: 30%;
+	display: inline-block;
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 5px;
+	border-color: transparent;
+}
+
+input#cvv {
+	width: 20%;
+	margin-left: 15%;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	border-color: transparent;
+}
+
+input#submit {
+	width: 100%;
+	padding: 15px 20px;
+	color: white;
+	background-color: rgb(25, 121, 231);
+	border: none;
+	border-radius: 5px;
+}
