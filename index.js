@@ -21,12 +21,29 @@ import {
 	card,
 } from "./utils.js";
 
+import { setInputFilter } from "./helper.js";
+
 /**
  * fetches the Year/Month values
  */
 
 year.addEventListener("input", () => {
 	exp.textContent = `${month.value}/${year.value}`;
+});
+
+/**
+ * helper to set only numeric values
+ */
+
+setInputFilter(document.getElementById("cardnum"), function (value) {
+	return /^-?\d*$/.test(value);
+});
+
+/**
+ * helper to set only alphabetical values
+ */
+setInputFilter(document.getElementById("cardHolder"), function (value) {
+	return /^[a-z]*$/i.test(value);
 });
 
 cardNumber.addEventListener("input", () => {
@@ -68,7 +85,8 @@ cvv.addEventListener("input", (e) => {
 });
 
 /**
- * Form submit ~ fetch values and clear on success
+ * Form submit ~ fetch values and clear on success. Not doing anything with the fetched
+ * values right now coz nothing was mentioned in the doc
  */
 form.addEventListener("submit", function (e) {
 	e.preventDefault();
