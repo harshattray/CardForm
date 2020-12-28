@@ -238,3 +238,33 @@ form>span {
 	grid-row: 4/5;
 	grid-column: 10/13;
 }
+
+.rotateF {
+	/* transform: rotateX(90deg); */
+	opacity: 0;
+	transform: rotateY(90deg);
+}
+
+.rotateB {
+	opacity: 1;
+	transform: rotateY(0deg);
+
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
