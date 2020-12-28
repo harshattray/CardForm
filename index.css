@@ -90,3 +90,102 @@ input#submit {
 	border: none;
 	border-radius: 5px;
 }
+
+form {
+	margin-top: 80px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(3, minmax(0, auto));
+}
+
+
+form>span {
+	display: none;
+}
+
+.card {
+	width: 323.5px;
+	height: 204.09px;
+	border-radius: 10px;
+	margin: 0 auto;
+	transition: all 1s 2s;
+	grid-row: 1/2;
+	grid-column: 4/7;
+	opacity: 1;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(3, minmax(0, auto));
+	color: white;
+	background-color: #696969;
+	position: relative;
+	z-index: 2;
+	transition: all 1s 0.5s;
+}
+
+.silver {
+	grid-row: 2/3;
+	grid-column: 1/4;
+}
+
+.cardtype {
+	grid-row: 2/3;
+	grid-column: 10/13;
+	text-align: justify;
+	margin-top: 5%;
+}
+
+.inputhere {
+	grid-row: 3/4;
+	grid-column: 1/13;
+	border: 1px solid white;
+	border-radius: 5px;
+	display: inline-grid;
+	align-items: center;
+	margin-bottom: 15px;
+	height: 30px;
+}
+
+.inputhere ul {
+	display: grid;
+	grid-column: 1/13;
+	padding: 0;
+	margin: 0;
+}
+
+.inputhere li {
+	list-style-type: none;
+	font-weight: bold;
+	letter-spacing: 7px;
+}
+
+.inputhere li.first {
+	grid-column: 2/4;
+}
+
+.inputhere li.second {
+	grid-column: 5/7;
+}
+
+.inputhere li.third {
+	grid-column: 9/11;
+}
+
+.inputhere li.fourth {
+	grid-column: 12/13;
+}
+
+.carduser {
+	grid-row: 4/5;
+	grid-column: 1/8;
+	text-transform: uppercase;
+}
+
+.carduser small {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.expire {
+	grid-row: 4/5;
+	grid-column: 10/13;
+}
