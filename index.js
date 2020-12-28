@@ -15,7 +15,6 @@ import {
 	fourth,
 	cardUserName,
 	exp,
-	cardlogo,
 	userData,
 	cardInfo,
 	card,

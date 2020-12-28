@@ -14,7 +14,6 @@ export const third = document.querySelector(".card .inputhere .third");
 export const fourth = document.querySelector(".card .inputhere .fourth");
 export const cardUserName = document.querySelector(".card .carduser p");
 export const exp = document.querySelector(".card .expire p");
-export const cardlogo = document.querySelectorAll(".cardlogo img");
 export const userData = {};
 export const cardInfo = [cardNumber, cardHolder, month, year, cvv];
 export const card = document.querySelector(".card");
